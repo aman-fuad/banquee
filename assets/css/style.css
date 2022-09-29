@@ -1,0 +1,274 @@
+html {
+    font-size: 100%;
+}
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+
+ul , li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+/*Header Start*/
+.main-header .container {
+    max-width: 1400px;
+}
+
+.main-header {
+    margin: 24px 0;
+}
+
+.main-header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.banq-nav {
+    margin-left: auto;
+}
+
+.banq-desktop-nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.banq-desktop-nav li a {
+    font-size: 16px;
+    line-height: 1.95;
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+    background: transparent;
+    padding: 8px 12px;
+}
+
+a.login {
+    margin-right: 32px;
+}
+/* Header End */
+
+/* Hero Section */
+.hero {
+    background-color: var(--secondary-color);
+}
+
+.hero-content {
+    padding: 120px 0;
+}
+
+.heading-h5 {
+    font-size: 20px;
+    font-family: 'DM Sans';
+}
+
+.hero-button .btn {
+    margin-right: 32px;
+}
+
+.hero-single-card {
+    margin: 0 33px;
+}
+
+.hero-card-container {
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+.hero-card-inner {
+    position: relative;
+    display: flex;
+    width: 120%;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 0 0 auto;
+    grid-column-gap: 4rem;
+    grid-row-gap: 4rem;
+}
+
+
+.hero-single-card {
+    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); 
+    transform-style: preserve-3d;
+    transition: all 5s;
+}
+
+.hero-single-card img {
+    transform: translate3d(0px, 30%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); 
+    transform-style: preserve-3d;
+}
+
+img.single-card-img-side {
+    padding-top: 152px;
+}
+
+img.single-card-img-middle {
+    padding-top: 54px;
+}
+
+/* Hero Section End */
+
+/* Hamburger */
+
+/* // Hamburger */
+
+
+/* Mobile App Feature */
+ul.app-feature-list li {
+    color: #000;
+    font-size: 18px;
+    list-style: none;
+    background-image: url(assets/images/check.png) !important;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 30px;
+}
+
+.app-feature-content > ul li:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+
+.app-feature-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+/* Mobile App Feature End */
+
+/* All In One Bank */
+
+.one-bank-feature-large {
+    display: block;
+    overflow: hidden;
+    padding: 64px;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+}
+
+.large-feature-image {
+    height: 250px;
+    margin-right: -64px;
+    margin-bottom: -64px;
+    margin-left: -64px;
+}
+
+
+.one-bank-feature-card {
+    display: flex;
+    height: 250px;
+    margin-right: -4rem;
+    margin-bottom: -4rem;
+    margin-left: -4rem;
+    justify-content: center;
+    align-items: flex-start;
+    grid-column-gap: 18px;
+    grid-row-gap: 18px;
+}
+
+
+.feature-card-side {
+    width: 40%;
+    padding-top: -4rem;
+}
+
+img.feature-card-side {
+    width: 40%;
+    padding-top: 64px;
+}
+
+/* One Bank Feature Small */
+.one-bank-feature-small {
+    display: block;
+    overflow: hidden;
+    padding: 3rem;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+}
+
+.one-bank-feature-small-img {
+    margin-right: -54px;
+    margin-bottom: -54px;
+    margin-left: -54px;
+}
+
+/* All In One Bank End */
+
+
+/* choose your card */
+.choose-card-content span {
+    font-size: 16px;
+}
+
+.choose-card-content p {
+    font-size: 16px;
+}
+
+.choose-card-card img {width: 100%;margin-bottom: 24px;}
+
+
+
+/* primary card */
+.banq-card-primary {
+    border: 1px solid #fbd0d0;
+    padding: 71px;
+    border-radius: 20px 90px 20px 20px;
+    height: 100%;
+    background: #fff;
+    transition: 0.4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banq-card-primary:hover {
+    background: rgb(var(--brand-color));
+    color: #fff;
+    display: block;
+}
+/* // primary card */
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1199px) {
+   
+
+}
+
+@media screen and (max-width: 991px) {
+    
+
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 600px) {
+   
+}
+
+
+/*  TIME UP HOYE GELO, SOMOYYER JONNO COMPLETE KORTE PARINI, RESPOSIVE O KORTE PARINI :) */
+
+
+
+
+
+
