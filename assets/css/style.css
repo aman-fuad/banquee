@@ -1,11 +1,6 @@
-html {
-    font-size: 100%;
-}
-
 *, *:after, *:before {
     box-sizing: border-box;
 }
-
 
 ul , li {
     margin: 0;
@@ -13,9 +8,8 @@ ul , li {
     list-style: none;
 }
 
-
 /*Header Start*/
-.main-header .container {
+.main-header .container, .footer-top .container {
     max-width: 1400px;
 }
 
@@ -46,76 +40,82 @@ ul , li {
 .banq-desktop-nav li a {
     font-size: 16px;
     line-height: 1.95;
-    font-weight: 500;
-    text-decoration: none;
     position: relative;
-    background: transparent;
     padding: 8px 12px;
+}
+
+.banq-desktop-nav li a:hover {
+    background-color: var(--secondary-color);
+    border-radius: 6px;
+}
+
+.main-menu {
+    margin-left: 16px;
 }
 
 a.login {
     margin-right: 32px;
 }
+
 /* Header End */
 
-/* Hero Section */
-.hero {
-    background-color: var(--secondary-color);
-}
-
+/* Hero Start */
 .hero-content {
     padding: 120px 0;
-}
-
-.heading-h5 {
-    font-size: 20px;
-    font-family: 'DM Sans';
 }
 
 .hero-button .btn {
     margin-right: 32px;
 }
 
+.hero-button .btn:hover {
+    background-color: #3b9884;
+    color: #fff;
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    margin-bottom: 32px;
+}
+
 .hero-single-card {
-    margin: 0 33px;
+    margin: 0 30px;
 }
 
 .hero-card-container {
     overflow: hidden;
     width: 100%;
-    height: 300px;
+    height: 320px;
     display: flex;
     justify-content: center;
 }
 .hero-card-inner {
     position: relative;
-    display: flex;
     width: 120%;
-    justify-content: center;
     align-items: flex-start;
     flex: 0 0 auto;
     grid-column-gap: 4rem;
     grid-row-gap: 4rem;
 }
 
-
-.hero-single-card {
-    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); 
-    transform-style: preserve-3d;
-    transition: all 5s;
+.hero-single-card img {
+    transform: translate3d(0px, 18%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); 
 }
 
 .hero-single-card img {
-    transform: translate3d(0px, 30%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); 
-    transform-style: preserve-3d;
+    transition: 0.3s;
 }
 
-img.single-card-img-side {
-    padding-top: 152px;
+.hero-single-card:hover img:not(.single-card-img-active) {
+    padding-top: 0;
 }
 
-img.single-card-img-middle {
-    padding-top: 54px;
+.single-card-img-side {
+    padding-top: 266px;
+}
+
+.single-card-img-middle {
+    padding-top: 122px;
 }
 
 /* Hero Section End */
@@ -126,14 +126,13 @@ img.single-card-img-middle {
 
 
 /* Mobile App Feature */
-ul.app-feature-list li {
+.app-feature-list li {
     color: #000;
     font-size: 18px;
-    list-style: none;
-    background-image: url(assets/images/check.png) !important;
+    background-image: url('./../images/check.png');
     background-repeat: no-repeat;
     background-position: left center;
-    padding-left: 30px;
+    padding-left: 38px;
 }
 
 .app-feature-content > ul li:not(:last-child) {
@@ -147,6 +146,12 @@ ul.app-feature-list li {
     justify-content: center;
     height: 100%;
 }
+
+.app-feature-content p {
+    font-size: 17px;
+    margin-bottom: 32px;
+    line-height: 32.32px;
+}
 /* Mobile App Feature End */
 
 /* All In One Bank */
@@ -154,9 +159,18 @@ ul.app-feature-list li {
 .one-bank-feature-large {
     display: block;
     overflow: hidden;
-    padding: 64px;
+    padding: 64px 93px;
     border-radius: 10px;
     background-color: #f8f8f8;
+}
+
+.large-feature-heading {
+    margin-bottom: 73px;
+}
+
+.large-feature-heading p, .one-bank-feature-small p {
+    line-height: 32px;
+    color: rgba(26, 25, 30, 0.5);
 }
 
 .large-feature-image {
@@ -170,40 +184,36 @@ ul.app-feature-list li {
 .one-bank-feature-card {
     display: flex;
     height: 250px;
-    margin-right: -4rem;
-    margin-bottom: -4rem;
-    margin-left: -4rem;
     justify-content: center;
     align-items: flex-start;
     grid-column-gap: 18px;
     grid-row-gap: 18px;
 }
 
-
 .feature-card-side {
-    width: 40%;
-    padding-top: -4rem;
-}
-
-img.feature-card-side {
-    width: 40%;
-    padding-top: 64px;
+    width: 42%;
+    padding-top: 78px;
 }
 
 /* One Bank Feature Small */
 .one-bank-feature-small {
     display: block;
     overflow: hidden;
-    padding: 3rem;
+    padding: 56px 47px;
     border-radius: 10px;
     background-color: #f8f8f8;
+    height: 100%;
 }
 
-.one-bank-feature-small-img {
+.one-bank-feature-small-content {
+    margin-bottom: 58px;
+}
+
+/* .one-bank-feature-small-img {
     margin-right: -54px;
     margin-bottom: -54px;
     margin-left: -54px;
-}
+} */
 
 /* All In One Bank End */
 
@@ -217,58 +227,141 @@ img.feature-card-side {
     font-size: 16px;
 }
 
-.choose-card-card img {width: 100%;margin-bottom: 24px;}
+.choose-card-card img {width: 100%;}
+/* CHOOSE CARD END */
 
-
-
-/* primary card */
-.banq-card-primary {
-    border: 1px solid #fbd0d0;
-    padding: 71px;
-    border-radius: 20px 90px 20px 20px;
-    height: 100%;
-    background: #fff;
-    transition: 0.4s;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/* FAQ START */
+.faq-support-icon {
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    margin-right: 24px;
+    width: 50px;
+    height: 50px;
 }
 
-.banq-card-primary:hover {
-    background: rgb(var(--brand-color));
-    color: #fff;
-    display: block;
+.faq-hotline {
+    margin-bottom: 32px;
 }
-/* // primary card */
 
+.faq-email {
+    margin-bottom: 51px;
+}
+
+.faq-support h2 {
+    margin-bottom: 48px;
+}
+
+/* Accordion */
+.accordion-button {
+    padding: 32px 0;
+}
+
+.accordion-button::after {
+    background-image: url('./../images/plus.png');
+}
+
+.accordion-button:not(.collapsed) {
+    color: #1A191E;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.accordion-body {
+    padding: 0 0 16px 0;
+    font-size: 16px;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url('./../images/close.png');
+}
+/* FAQ END */
 
 
 /* Media Queries */
 
-@media screen and (max-width: 1199px) {
-   
 
+
+@media screen and (max-width: 1199px) {
+    .hero-single-card {
+        margin: 0;
+    }
+    .hero-card-inner {
+        width: 115%;
+    }
+
+    .hero-content {
+        padding: 90px 0;
+    }
+
+    .one-bank-feature-large {
+        padding: 50px 13px;
+    }
+    .large-feature-heading {
+        margin-bottom: 50px;
+    }
+
+    .one-bank-feature-small {
+        padding: 40px 30px;
+    }
+    .one-bank-feature-small-content {
+        margin-bottom: 45px;
+    }
+
+    .accordion-button {
+        padding: 25px 0;
+    }
 }
 
 @media screen and (max-width: 991px) {
-    
+    a.login {
+        margin-right: 15px;
+    }
+
+    .main-menu {
+        margin-left: 6px;
+    }
+
+    h1, .h1 {
+        font-size: 65px;
+    }
+
+    .hero-content {
+        padding: 60px 0;
+    }
+
+    .hero-single-card img {
+        transform: translate3d(0px, 15%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    }
+
+    h2, .h2 {
+        font-size: 40px;
+        line-height: 42px;
+    }
+
+    .banq-sec-160 {
+        padding: 60px 0;
+    }
+
+    .banq-heading {
+        margin-bottom: 50px;
+    }
 
 }
 
 @media screen and (max-width: 768px) {
-    
+    .hero-card-inner {
+        width: 160%;
+    }
+
+    .hero-single-card img {
+        transform: translate3d(0px, 24%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    }
+
+    .hero-content {
+        padding-bottom: 0;
+    }
 }
 
 @media screen and (max-width: 600px) {
    
 }
-
-
-/*  TIME UP HOYE GELO, SOMOYYER JONNO COMPLETE KORTE PARINI, RESPOSIVE O KORTE PARINI :) */
-
-
-
-
-
-
